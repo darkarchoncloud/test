@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+//方法二，用recursion反转链表
+
+
+class Node {
+
+int value;
+Node next;
+
+}
+
+
+
+Node reverseLL(Node head) {
+
+    if (head == NULL || head.next == NULL) {
+        return head;
+}
+
+
+    Node nextNode = head.next;
+    

@@ -1,0 +1,44 @@
+class reverseLLDemo1 {
+
+
+class Node {
+
+int value;
+Node next;
+
+Node() {}
+
+}
+
+//自己动手，方法一反转链表
+
+static Node reverseLL(Node head) {
+
+   if (head == NULL || head.next == NULL) {
+      return head;
+}
+
+   Node curr = head;
+   Node prev = NULL;
+   while (curr != NULL) {
+      Node nextNode = curr.next;    //防止丢失下一元素
+      curr.next = prev;             //改为向前指
+      prev = curr;                  //prev指针更新为当前元素
+      curr = curr.next;             //当前元素后移（最后一步才移动当前元素）
+}
+
+   return prev;                      //curr最后变为NULL了，这时候的prev就是新反转链表的head
+
+}
+
+
+
+public static void main(String[] args) {
+
+Node head = new Node();
+Node curr = head;
+
+while (i < 5) {
+
+
+
