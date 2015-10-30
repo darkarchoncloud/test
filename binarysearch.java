@@ -1,4 +1,4 @@
-public class binarysearch {
+public class binarysearch  {
 	public static class TreeNode {
   /*
    * Special symbol for null node, used in pre-order reconstruction.
